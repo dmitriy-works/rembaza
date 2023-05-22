@@ -8,9 +8,8 @@
 
 .header__top {
   padding: 15px 0;
-  padding-bottom: 15px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid $gray;
+  padding-bottom: 15px; 
+  
   &-inner {
     display: flex;
     justify-content: center;
@@ -79,6 +78,11 @@
   }
 }
 
+.header__border-top {
+  margin: 30px 0;
+  border-bottom: 1px solid $gray;
+}
+
 .header__bottom {
   &-inner {
     display: flex;
@@ -87,7 +91,16 @@
     gap: 85px;
     margin-bottom: 20px;
   }
+
+  &-list {
+    display: flex;
+    gap: 25px;
+  }
+
+  
 }
+
+
 
 .header__social-list {
   display: flex;  
@@ -146,4 +159,165 @@
       background-color: #DA1E18;
     }
   }
+}
+
+
+.slick-btn {   
+  position: absolute;
+  top: 50%;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+  transform: translateX(-50%);
+  background-color: rgba(218, 30, 24, .7);
+}
+
+.slick-prev {
+  left: 381px;
+  z-index: 30;
+}
+
+.slick-next {
+  right: 150px;
+}
+
+
+
+
+// media
+
+@media(max-width: 1350px) {
+
+  .slick-prev {
+    left: 150px;
+  }
+
+  .slick-next {
+    right: 150px;   
+  }
+}
+
+
+
+
+
+@media(max-width: 1050px) {
+
+  .header__top-inner {   
+    flex-direction: column;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .header__bottom-inner {   
+    gap: 25px;
+    margin-bottom: 20px;
+  }
+
+  .header__menu-list {    
+    gap: 25px;
+  }
+}
+
+
+
+
+
+@media(max-width: 960px) {
+
+  .header__bottom-inner {       
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .header__bottom-text {
+    width: 100%;
+  }
+}
+
+
+@media(max-width:860px) {
+
+  .slick-prev {
+    left: 85px;
+  }
+
+  .slick-next {
+    right: 85px;
+  }
+}
+
+
+
+
+
+
+
+
+@media(max-width: 780px) {
+
+  .header__menu-list {   
+    justify-content: center;   
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  
+}
+
+
+
+
+
+@media(max-width: 520px) {
+
+  .header__bottom-list {
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+    gap: 0;
+  }
+}
+
+
+
+
+@media(max-width: 630px) {
+
+  .header__bottom-inner {
+    justify-content: center;
+  }
+
+  .header__bottom-content {
+    text-align: center;   
+  }
+
+  .slick-btn {
+    display: none;
+    opacity: 0;
+  }
+}
+
+
+
+
+@media(max-width: 420px) {   
+
+  .header__menu-list {   
+   gap: 15px;
+  }
+
+}
+
+
+
+@media(max-width: 360px) {
+
+  .header__top-inner {   
+    font-size: 14px;
+    gap: 12px;    
+  }
+  
 }

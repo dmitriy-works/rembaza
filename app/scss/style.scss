@@ -297,7 +297,7 @@
 }
 
 .electrik {
-  fill: #363636;
+  fill: $mainText;
   width: 132px;
   height: 132px;
   text-align: center;  
@@ -307,6 +307,64 @@
   }
 }
 
+.kuzov {
+  fill: $mainText;
+  width: 128px;
+  height: 128px;
+  &:hover {
+    fill: #fff;
+  }
+}
+
+.engine {  
+  stroke: $mainText;
+  width: 128px;
+  height: 128px;
+  &:hover {
+    stroke: #fff; 
+    fill: #fff;  
+  }
+}
+
+.suspension {
+  stroke: $mainText;
+  width: 128px;
+  height: 128px;
+  &:hover {
+     stroke: #fff; 
+     fill: #fff;
+  }
+}
+
+.brake-system {
+  stroke: $mainText;
+  width: 128px;
+  height: 128px;
+  &:hover {
+     stroke: #fff; 
+     fill: #fff;
+  }
+}
+
+.pneumatic-system {
+  stroke: $mainText;
+  width: 128px;
+  height: 128px;
+  &:hover {
+     stroke: #fff; 
+     fill: #fff;
+  }
+}
+
+.steering-system {
+  stroke: $mainText;
+  width: 128px;
+  height: 128px;
+  &:hover {
+     stroke: #fff; 
+     fill: #fff;
+  }
+}
 
 // media
 

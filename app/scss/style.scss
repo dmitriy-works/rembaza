@@ -167,7 +167,7 @@
 .header__drop-down > a {  
   padding: 12px 32px 22px 25px;   
   position: relative; 
-  transition: all .5s ease-in-out; 
+  transition: all .5s ease-in-out;   
    &::after {
     content: '';
     position: absolute;
@@ -194,7 +194,7 @@
 
 
 .header__drop-down {
-  position: relative;  
+  position: relative;    
   }
 
 .drop__down-list {  
@@ -263,6 +263,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 31px;
+    margin-bottom: 60px;
   }
 }
 
@@ -270,7 +271,7 @@
   display: block;
   max-width: 277px;
   padding: 31px 50px;
-  text-align: center;
+  text-align: center;   
   border-radius: 4px;
   border: 1px solid #E8E5E5;    
   transition: all .3s ease-in-out;
@@ -285,86 +286,106 @@
   }
 }
 
-.transmission {
-  fill: #363636;
-  width: 130px;
-  height: 130px;
-  text-align: center;  
-  transition: all .3s ease-in-out;
-  &:hover {
-    fill: #fff;
-  }
-}
-
-.electrik {
-  fill: $mainText;
-  width: 132px;
-  height: 132px;
-  text-align: center;  
-  transition: all .3s ease-in-out;
-  &:hover {
-    fill: #fff;
-  }
-}
-
-.kuzov {
-  fill: $mainText;
-  width: 128px;
-  height: 128px;
-  &:hover {
-    fill: #fff;
-  }
-}
-
-.engine {  
-  stroke: $mainText;
-  width: 128px;
-  height: 128px;
-  &:hover {
-    stroke: #fff; 
-    fill: #fff;  
-  }
-}
-
-.suspension {
-  stroke: $mainText;
-  width: 128px;
-  height: 128px;
-  &:hover {
-     stroke: #fff; 
-     fill: #fff;
-  }
-}
-
-.brake-system {
-  stroke: $mainText;
-  width: 128px;
-  height: 128px;
-  &:hover {
-     stroke: #fff; 
-     fill: #fff;
-  }
-}
-
-.pneumatic-system {
-  stroke: $mainText;
-  width: 128px;
-  height: 128px;
-  &:hover {
-     stroke: #fff; 
-     fill: #fff;
-  }
-}
-
+.transmission,
+.electrik,
+.kuzov,
+.engine,
+.suspension,
+.brake-system,
+.pneumatic-system,
 .steering-system {
   stroke: $mainText;
+  fill: $mainText;
   width: 128px;
   height: 128px;
-  &:hover {
-     stroke: #fff; 
+  text-align: center;
+  transition: all .3s ease-in-out;
+}
+
+
+.work__item:hover .transmission {
+  fill: #fff;
+  transition: all .3s ease-in-out;
+}
+
+.work__item:hover .electrik {   
+  fill: #fff;
+  transition: all .3s ease-in-out;
+}
+
+.work__item:hover .kuzov {  
+  fill: #fff;
+  transition: all .3s ease-in-out;
+}
+
+.work__item:hover .engine {  
+    stroke: #fff; 
      fill: #fff;
+}
+
+.work__item:hover .suspension {
+  stroke: #fff; 
+     fill: #fff;
+}
+
+.work__item:hover .brake-system {
+   stroke: #fff; 
+     fill: #fff;
+}
+
+.work__item:hover .pneumatic-system {
+  stroke: #fff; 
+     fill: #fff;
+}
+
+.work__item:hover .steering-system {
+  stroke: #fff; 
+  fill: #fff;
+ 
+}
+
+.work__info {  
+  color: #fff;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, .5);
+  }
+
+
+  &-content {
+    width: 100%;
+    position: absolute;
+    top: 50%;   
+    left: 50%; 
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transform: translate(-50%, -50%);        
+    z-index: 5;
+  }
+
+  &-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+
+  &-btn {
+    padding: 8px 53px;
+    background-color: $red;
+    transition: all .2s ease-in-out;
+    &:hover {
+      background-color: $redHover;
+    }
   }
 }
+
+
 
 // media
 
@@ -380,8 +401,30 @@
 }
 
 
+
+@media (max-width: 1290px) {
+
+  .header__menu-list {    
+    gap: 50px;
+  }
+}
+
+
+
+@media (max-width: 1230px) {
+
+  .header__menu-list {
+    flex-direction: column;    
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+
 @media(max-width: 1100px) {
 
+  
   .work__inner {    
     grid-template-columns: repeat(3, 1fr);    
   }
@@ -408,6 +451,11 @@
   .header__menu-list {    
     gap: 25px;
   }
+
+  .work__info-title {   
+    font-size: 20px;
+    line-height: 26px;    
+  }
 }
 
 
@@ -425,6 +473,8 @@
     width: 100%;
   }
 }
+
+
 
 
 @media(max-width:860px) {
@@ -493,11 +543,24 @@
 
 @media(max-width: 520px) {
 
+  .drop__down-list {
+    min-width: 230px;
+  }
+
   .header__bottom-list {
    flex-direction: column;
    justify-content: center;
    text-align: center;
-    gap: 0;
+   gap: 0;
+  }
+
+  .work__info-title {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .work__info-btn {
+    padding: 8px 35px;   
   }
 }
 
@@ -511,15 +574,40 @@
    gap: 15px;
   }
 
+  .work__info-title {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .work__info-btn {
+    padding: 5px 30px;
+  }
+
+  .work__info-link {
+    font-size: 12px;
+  }
+
 }
 
 
 
 @media(max-width: 360px) {
 
+  .header__logo-img {
+    width: 200px;
+  }
+
   .header__top-inner {   
     font-size: 14px;
     gap: 12px;    
+  }
+
+  .drop__down-list {
+    min-width: 180px;
+  }
+
+  .work__info-title {    
+    margin-bottom: 15px;
   }
   
 }

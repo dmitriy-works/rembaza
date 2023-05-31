@@ -41,17 +41,29 @@ $(function () {
     nextArrow: '<button type="button" class="slick-next slick-btn"><img src="images/arrow-next.svg"</button>',
   });
 
+});
 
+const tabsBtn = document.querySelectorAll('.tabs__item');
+const tabsContent = document.querySelectorAll('.tabs__content');
 
+  tabsBtn.forEach(function (item) {
+  item.addEventListener('click', function () {
+   currentBtn = item;
+   let tabId = currentBtn.getAttribute('data-tab');
+   let currentTab = document.querySelector(tabId); 
+   
 
+   tabsBtn.forEach(function (item) {
+    item.classList.remove('tabs__item-active');
+  });
 
-
-
-
+   tabsContent.forEach(function (item) {
+    item.classList.remove('tabs__item-active');
+ }); 
+   currentBtn.classList.add('tabs__item-active');
+   currentTab.classList.add('tabs__item-active');
+  });
 
 });
 
-
-
-
-
+document.querySelector('.tabs__item').click();

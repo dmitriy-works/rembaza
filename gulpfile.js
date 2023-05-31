@@ -103,7 +103,7 @@ function browsersync() {
     server: {
       baseDir: "app/"
     },
-    browser: 'firefox',
+    browser: 'chrome',
     notify: false
   });
 }

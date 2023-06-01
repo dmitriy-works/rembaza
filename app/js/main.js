@@ -66,4 +66,4 @@ const tabsContent = document.querySelectorAll('.tabs__content');
 
 });
 
-document.querySelector('.tabs__item').click();
+document.querySelector('.tabs__item:nth-child(3)').click();

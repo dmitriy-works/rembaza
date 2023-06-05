@@ -487,6 +487,111 @@
   }
 }
 
+.swiper-wrapper {
+  margin-bottom: 70px;
+  background-color: #0ae54f;
+  position: relative;
+}
+
+.insurance__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  border-radius: 100%;
+  fill: #0ae54f;
+  background-color: rgba(218, 30, 24,);
+  transition: all .3s ease-in-out;
+  &:hover {   
+    background-color: rgba(194, 23, 17,);
+  }
+  
+}
+
+.arrow-prev {
+  fill:#FAFAFA;
+  width: 25px;
+  height: 16px;  
+  transition: all .2s ease-in-out;
+  &:hover {
+    fill: #fff;    
+  }
+}
+
+.arrow-next {
+  fill:#FAFAFA;
+  width: 25px;
+  height: 16px;  
+  
+  transition: all .2s ease-in-out;
+  &:hover {
+    fill: #fff;    
+  }  
+}
+
+.insurance__swiper-img {  
+  img {
+    box-shadow: 0 15px 80px 2px rgba(0,0,0,0.07);
+  }    
+}
+
+
+.tabs__repair {
+  &-title {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    color: $mainText;
+    margin-bottom: 30px;
+  }
+  &-text {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+
+.repair__img {
+  width: 100%;
+  height: 200px;  
+  margin-bottom: 50px;
+}
+
+.visit__repair {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  margin-bottom: 70px;
+  &-item {
+    flex-basis: 850px;
+  }
+  &-title {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;   
+  }
+  &-btn {
+      text-align: center;
+  }
+  &-link {
+    color: #fff;
+    font-weight: 600;
+    padding: 8px 35px;
+    border-radius: 7px;
+    background-color: #da1e18;
+    -webkit-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    &:hover {
+      background-color: $redHover;
+    }
+  }
+}
+
+
+
 
 
 
@@ -634,6 +739,11 @@
     gap: 20px;
   }
 
+  .visit__repair {    
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);    
+  }
+
   
 }
 
@@ -712,6 +822,26 @@
 
   .work__info-link {
     font-size: 12px;
+  }
+
+  .tabs__repair-text {    
+    margin-bottom: 30px;
+  }
+
+  .repair__img {    
+    margin-bottom: 30px;
+  }
+
+  .visit__repair {    
+    gap: 35px;    
+    margin-bottom: 35px;
+  }
+
+  .visit__repair-title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
   }
 
 }

@@ -66,4 +66,22 @@ const tabsContent = document.querySelectorAll('.tabs__content');
 
 });
 
-document.querySelector('.tabs__item:nth-child(3)').click();
+document.querySelector('.tabs__item:nth-child(4)').click();
+
+
+const swiper = new Swiper('.swiper', {
+   slidesPerView: 4,
+      spaceBetween: 10,
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  
+  navigation: {
+    nextEl: '.insurance-button-next',
+    prevEl: '.insurance-button-prev',
+  },
+
+  
+});

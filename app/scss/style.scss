@@ -487,49 +487,54 @@
   }
 }
 
-.swiper-wrapper {
-  margin-bottom: 70px;
-  background-color: #0ae54f;
-  position: relative;
+
+
+
+
+.insurance__nav {
+  display: flex; 
+  gap: 20px; 
 }
 
-.insurance__btn {
+.insurance__nav-btn {
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 45px;
-  height: 45px;
-  cursor: pointer;
-  border-radius: 100%;
-  fill: #0ae54f;
-  background-color: rgba(218, 30, 24,);
-  transition: all .3s ease-in-out;
-  &:hover {   
-    background-color: rgba(194, 23, 17,);
-  }
+  align-items: center;  
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;  
+  position: absolute;
+  background-color: aquamarine;  
+}
+
+.insurance__prev {
+  
+  top: 50%;
+}
+
+
+.insurance__nav-arrows {
+  display: block;
+  width: 25px;
+  height: 16px;  
+  object-fit: cover;  
+  fill: #363636;   transition: fill .3s ease-in-out;  
+}
+
+.insurance__nav-prev {
   
 }
 
-.arrow-prev {
-  fill:#FAFAFA;
-  width: 25px;
-  height: 16px;  
-  transition: all .2s ease-in-out;
-  &:hover {
-    fill: #fff;    
-  }
-}
 
-.arrow-next {
-  fill:#FAFAFA;
-  width: 25px;
-  height: 16px;  
-  
-  transition: all .2s ease-in-out;
-  &:hover {
-    fill: #fff;    
-  }  
-}
+
+
+
+
+
+
+
+
+
 
 .insurance__swiper-img {  
   img {
@@ -592,6 +597,88 @@
 
 
 
+.services {
+  padding: 80px 0;
+  background: linear-gradient(90.19deg, rgba(232, 229, 229, 0) -0.92%, #ECECEC 99.79%);
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+.services__item {
+  margin-bottom: 80px;
+  &-content {
+    padding: 30px;
+    background-color: #fafafa;
+  }
+  &-text {
+    margin-bottom: 24px;
+  }
+}
+
+.swiper__header-slider {
+  position: relative;
+}
+
+.swiper-pagination {
+  margin-bottom: 50px;
+}
+
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+  border: 3px solid #fff;
+  background-color: transparent;
+}
+
+.swiper-pagination-bullet-active {
+  border: none;
+  background-color: $red;
+}
+
+.slider__btn {
+  position: absolute;
+  top: 50%;  
+  transform: translateX(-50%);
+  width: 48px;
+  height: 48px;
+  border: none;
+  cursor: pointer;
+  border-radius: 100%;
+  background-color: rgba(218, 30, 24, .7);
+  transition: background-color .3s;
+  z-index: 10;
+  &:hover {   
+    background-color: rgba(218, 30, 24,);
+  }
+}
+
+.prev__btn {
+  left: 200px;
+}
+
+.next__btn {
+  right:  200px;
+  transform: translateX(-50%);
+}
+
+.slider__btn-path {
+  fill: #FAFAFA;
+  transition: all .3s;
+  &:hover {
+    fill: #fff;
+  }
+}
+
+
+
 
 
 
@@ -641,6 +728,15 @@
   .work__item {    
     max-width: 100%;    
   }
+
+  .prev__btn {
+    left: 150px;
+  }
+
+  .next__btn {
+    right: 150px;    
+  }
+  
 }
 
 
@@ -702,17 +798,14 @@
 
 
 @media(max-width:860px) {
-
-  .slick-prev {
-    left: 85px;
-  }
-
-  .slick-next {
-    right: 85px;
-  }
+  
 
   .work__inner {    
     grid-template-columns: repeat(2, 1fr);    
+  }
+
+  .tabs {
+    padding-bottom: 0px;
   }
 
   .tabs__items {    
@@ -722,6 +815,30 @@
   .tabs__item {    
     margin-bottom: 12px;
   }
+
+  .services__flex {    
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .services__item {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .section-title {
+    text-align: center;
+  }
+
+   .prev__btn {
+    left: 100px;
+  }
+
+  .next__btn {
+    right: 100px;    
+  }
+
+  
 }
 
 
@@ -764,6 +881,14 @@
     display: none;
     opacity: 0;
   }
+
+   .prev__btn {
+    left: 50px;
+  }
+
+  .next__btn {
+    right: 50px;    
+  }
 }
 
 
@@ -798,6 +923,18 @@
 
   .work__info-btn {
     padding: 8px 35px;   
+  }
+
+   .prev__btn {
+    left: 30px;
+  }
+
+  .next__btn {
+    right: 30px;    
+  }
+
+  .swiper-pagination {
+    display: none;
   }
 }
 
@@ -842,6 +979,10 @@
     line-height: 24px;
     font-weight: 700;
     margin-bottom: 15px;
+  }  
+
+  .slider__btn {
+    display: none;
   }
 
 }
@@ -859,7 +1000,7 @@
     gap: 12px;    
   }
 
-  .drop__down-list {
+  .drop__down-list {    
     min-width: 180px;
   }
 

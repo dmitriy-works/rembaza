@@ -46,8 +46,6 @@
             <li class="header__bottom-item"><a class="header__bottom-link" href="#">Ремонт та обслуговування
                 вантажівок</a></li>
           </ul>
-
-
           <ul class="header__social-list">
             <li class="header__social-item"><a class="header__social-link" href="#">
                 <svg class="header__facebook">
@@ -68,7 +66,6 @@
         </div>
       </div>
     </div>
-
     <nav class="header__menu">
       <div class="container">
         <ul class="header__menu-list">
@@ -94,18 +91,60 @@
     </nav>
   </header>
 
-  <div class="slider">
-    <div class="slider__items">
-      <div class="slider__item">
-        <img class="intro__img" src="images/header-bg.jpg" alt="header-bg">
+  <div class="header__slider">
+
+    <div class="swiper swiper__header-slider">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide header__slide">
+          <img src="images/header-bg-3.jpg" alt="">
+        </div>
+
+        <div class="swiper-slide header__slide">
+          <img src="images/header-bg-2.jpg" alt="">
+        </div>
+
+        <div class="swiper-slide header__slide">
+          <img src="images/header-bg-3.jpg" alt="">
+        </div>
+
+        <div class="swiper-slide header__slide">
+          <img src="images/header-bg-3.jpg" alt="">
+        </div>
+
+        <div class="swiper-slide header__slide">
+          <img src="images/header-bg-3.jpg" alt="">
+        </div>
+
+        <div class="swiper-slide header__slide">
+          <img src="images/header-bg-3.jpg" alt="">
+        </div>
+
+        ...
       </div>
-      <div class="slider__item">
-        <img class="intro__img" src="images/header-bg-2.jpg" alt="header-bg">
+
+      <div class="swiper-pagination"></div>
+
+      <div class="container">
+        <button class="slider__btn prev__btn">
+          <svg class="slider__btn-path" width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0.292891 7.29314C-0.0976333 7.68366 -0.0976334 8.31682 0.29289 8.70735L6.65685 15.0713C7.04738 15.4618 7.68054 15.4618 8.07107 15.0713C8.46159 14.6808 8.46159 14.0476 8.07107 13.6571L2.41421 8.00024L8.07107 2.34339C8.46159 1.95286 8.46159 1.3197 8.07107 0.929175C7.68054 0.53865 7.04738 0.53865 6.65685 0.929175L0.292891 7.29314ZM25 7.00024L0.999998 7.00024L0.999998 9.00024L25 9.00024L25 7.00024Z" />
+          </svg>
+
+        </button>
+        <button class="slider__btn next__btn">
+          <svg class="slider__btn-path" width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M24.7074 8.70735C25.0979 8.31683 25.0979 7.68366 24.7074 7.29314L18.3434 0.929176C17.9529 0.538652 17.3197 0.538652 16.9292 0.929176C16.5387 1.3197 16.5387 1.95287 16.9292 2.34339L22.586 8.00024L16.9292 13.6571C16.5387 14.0476 16.5387 14.6808 16.9292 15.0713C17.3197 15.4618 17.9529 15.4618 18.3434 15.0713L24.7074 8.70735ZM0.000244141 9.00024H24.0002V7.00024H0.000244141V9.00024Z" />
+          </svg>
+
+        </button>
       </div>
-      <div class="slider__item">
-        <img class="intro__img" src="images/header-bg-3.jpg" alt="header-bg">
-      </div>
+
+
     </div>
+
   </div>
 
   <section class="work">
@@ -183,7 +222,7 @@
         </div>
         <div class="work__info-content">
           <h4 class="work__info-title">Не знаєте причину поломки - будь-який ремонт починається з діагностики.</h4>
-          <div class="work__info-btn">
+          <div class="work__info-btn btn-reset">
             <a class="work__info-link" href="#">Детальніше</a>
           </div>
         </div>
@@ -232,13 +271,12 @@
                 шин і коліс у
                 зборі.
               </p>
-              <div class="tabs__box-btn">
-                <a class="tabs__box-link" href="#">Детальніше</a>
-              </div>
+
+              <a class="tabs__box-btn btn-reset" href="#">Детальніше</a>
+
             </div>
             <img class="tabs__content-img" src="images/tabs-images-1.jpg" alt="tabs-images-1">
           </div>
-
         </div>
 
         <div class="tabs__content" id="tab-2">
@@ -352,7 +390,6 @@
               операції
               призводить до розуміння можливих напрямків розвитку та розширення бізнесу.
             </p>
-
           </div>
         </div>
 
@@ -363,63 +400,9 @@
             </h4>
 
 
-            <div class="swiper swiper__content">
 
-              <div class="swiper-wrapper">
-
-                <div class="insurance__swiper swiper-slide">
-                  <div class="insurance__swiper-img">
-                    <img src="images/insurance-1.png" alt="">
-                  </div>
-                </div>
-
-
-                <div class="insurance__swiper swiper-slide">
-                  <div class="insurance__swiper-img">
-                    <img src="images/insurance-3.png" alt="">
-                  </div>
-                </div>
-
-                <div class="insurance__swiper swiper-slide">
-                  <div class="insurance__swiper-img">
-                    <img src="images/insurance-4.png" alt="">
-                  </div>
-                </div>
-
-                <div class="insurance__swiper swiper-slide">
-                  <div class="insurance__swiper-img">
-                    <img src="images/insurance-5.png" alt="">
-                  </div>
-                </div>
-
-                <div class="insurance__swiper swiper-slide">
-                  <div class="insurance__swiper-img">
-                    <img src="images/insurance-6.png" alt="">
-                  </div>
-                </div>
-
-
-              </div>
-
-              <!-- <div class="swiper-pagination"></div> -->
-
-              <div class="insurance__nav">
-                <div class="insurance-button-prev insurance__btn">
-                  <svg class="arrow-prev">
-                    <use xlink:href="images/sprite.svg#prev"></use>
-                  </svg>
-
-                </div>
-                <div class="insurance-button-next insurance__btn">
-                  <svg class="arrow-next">
-                    <use xlink:href="images/sprite.svg#next"></use>
-                  </svg>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
-
         <div class="tabs__content" id="tab-4">
           <div class="tabs__repair">
             <h4 class="tabs__repair-title">
@@ -453,7 +436,6 @@
                   або за заявкою автовласника.
                 </p>
               </div>
-
               <div class="visit__repair-item">
                 <h5 class="visit__repair-title">
                   Капітальний ремонт автомобіля
@@ -465,7 +447,6 @@
                   авто.
                 </p>
               </div>
-
               <div class="visit__repair-item">
                 <h5 class="visit__repair-title">
                   Середній ремонт автомобіля
@@ -478,7 +459,6 @@
                   Виконуються також усі необхідні спеціальні роботи та технічне обслуговування автомобіля.
                 </p>
               </div>
-
               <div class="visit__repair-item">
                 <h5 class="visit__repair-title">
                   Агрегатний метод ремонту автомобіля
@@ -493,21 +473,74 @@
                   мінімальних витратах автовласника.
                 </p>
               </div>
-
             </div>
             <div class="visit__repair-btn">
               <a class="visit__repair-link" href="#">
                 Записатися на СТО
               </a>
             </div>
-
           </div>
-
         </div>
-
       </div>
     </div>
   </section>
+
+  <section class="services">
+    <div class="container">
+      <div class="services__inner">
+
+        <div class="services__item">
+          <h2 class="services__title section-title">Діагностика вантажних автомобілів</h2>
+          <div class="services__flex">
+            <img class="services__item-img" src="images/services-1.jpg" alt="services-1">
+            <div class="services__item-content">
+              <p class="services__item-text">Діагностика вантажних автомобілів органічно вплелася в тканину ремонтних
+                робіт будь-якого автосервісу м. Воронеж.
+                Воронеж. Але тільки використання сучасного обладнання європейських виробників дає змогу точно
+                локалізувати
+                не тільки
+                поломку, а й виявити її причину.</p>
+              <a class="services__item-btn btn-reset" href="#">Детальніше</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="services__item">
+          <h2 class="services__title section-title">Ремонт вантажних автомобілів</h2>
+          <div class="services__flex">
+            <img class="services__item-img" src="images/services-2.jpg" alt="services-2">
+            <div class="services__item-content">
+              <p class="services__item-text">Ремонт вантажних автомобілів для Воронежа стає невичерпним полем
+                діяльності. І пов'язано це з особливим розташуванням
+                Воронезької агломерації на карті автомобільних доріг Росії. "Рембаза 36" завжди оперативно реагує на
+                екстрені випадки
+                поломок вантажівок.</p>
+              <a class="services__item-btn btn-reset" href="#">Детальніше</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="services__item">
+          <h2 class="services__title section-title">Сервісне обслуговування вантажних автомобілів</h2>
+          <div class="services__flex">
+            <img class="services__item-img" src="images/services-3.jpg" alt="services-3">
+            <div class="services__item-content">
+              <p class="services__item-text">Регулярне сервісне обслуговування вантажних автомобілів різко знижує
+                кількість аварійних поломок і підвищує термін
+                служби техніки. Але цей вид контролю технічного стану автотранспорту неоднозначно оцінюється власниками
+                вантажівок.</p>
+              <a class="services__item-btn btn-reset" href="#">Детальніше</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
 
 
 

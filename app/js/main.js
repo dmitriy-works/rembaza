@@ -1,5 +1,5 @@
 
-  
+
 
 // const menuBurger = document.querySelector('.burger-menu');
 // const menuList = document.querySelector('.header__menu-list');
@@ -26,62 +26,53 @@
 //     type: 'bullets',
 //     clickable: true,
 //   },
-  
-  
+
+
 // });
 
-$(function () {
+const swiperHeader = new Swiper('.swiper__header-slider', {
+  // Optional parameters
+  slidesPerView: 1,
 
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',    
+  },
 
-  $('.slider__items').slick({
-    slidesToShow:1,
-    slidesToScroll:1,
-    dots:true,
-    prevArrow: '<button type="button" class="slick-prev slick-btn"><img src="images/arrow-prev.svg"</button>',
-    nextArrow: '<button type="button" class="slick-next slick-btn"><img src="images/arrow-next.svg"</button>',
-  });
+  // Navigation arrows
+  navigation: {
+    nextEl: '.next__btn',
+    prevEl: '.prev__btn',
+  },
 
 });
+
+
 
 const tabsBtn = document.querySelectorAll('.tabs__item');
 const tabsContent = document.querySelectorAll('.tabs__content');
 
-  tabsBtn.forEach(function (item) {
+tabsBtn.forEach(function (item) {
   item.addEventListener('click', function () {
-   currentBtn = item;
-   let tabId = currentBtn.getAttribute('data-tab');
-   let currentTab = document.querySelector(tabId); 
-   
+    currentBtn = item;
+    let tabId = currentBtn.getAttribute('data-tab');
+    let currentTab = document.querySelector(tabId);
 
-   tabsBtn.forEach(function (item) {
-    item.classList.remove('tabs__item-active');
-  });
 
-   tabsContent.forEach(function (item) {
-    item.classList.remove('tabs__item-active');
- }); 
-   currentBtn.classList.add('tabs__item-active');
-   currentTab.classList.add('tabs__item-active');
+    tabsBtn.forEach(function (item) {
+      item.classList.remove('tabs__item-active');
+    });
+
+    tabsContent.forEach(function (item) {
+      item.classList.remove('tabs__item-active');
+    });
+    currentBtn.classList.add('tabs__item-active');
+    currentTab.classList.add('tabs__item-active');
   });
 
 });
 
-document.querySelector('.tabs__item:nth-child(4)').click();
+document.querySelector('.tabs__item:nth-child(3)').click();
 
 
-const swiper = new Swiper('.swiper', {
-   slidesPerView: 4,
-      spaceBetween: 10,
-  loop: true,
 
-  pagination: {
-    el: '.swiper-pagination',
-  },
-  
-  navigation: {
-    nextEl: '.insurance-button-next',
-    prevEl: '.insurance-button-prev',
-  },
-
-  
-});

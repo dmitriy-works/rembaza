@@ -36,7 +36,8 @@ const swiperHeader = new Swiper('.swiper__header-slider', {
 
   // If we need pagination
   pagination: {
-    el: '.swiper-pagination',    
+    el: '.swiper-pagination', 
+    clickable: true,   
   },
 
   // Navigation arrows
@@ -45,6 +46,23 @@ const swiperHeader = new Swiper('.swiper__header-slider', {
     prevEl: '.prev__btn',
   },
 
+});
+
+const swiperInsurance = new Swiper('.swiper__insurance', {
+  
+  slidesPerView: 4,
+  
+  pagination: {
+    el: '.swiper-pagination-insurance',
+    clickable: true,
+  },
+ 
+  navigation: {
+    nextEl: '.insurance__btn-next',
+    prevEl: '.insurance__btn-prev',
+    clickable: true,
+  },
+  
 });
 
 

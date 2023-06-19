@@ -65,6 +65,26 @@ const swiperInsurance = new Swiper('.swiper__insurance', {
   
 });
 
+const swiperInfo = new Swiper('.swiper__info', {
+
+  slidesPerView: 3,
+  spaceBetween: 30,
+  grabCursor: true,
+  slideToClickedSlide: true,
+  
+  navigation: {
+    nextEl: '.info__btn-next',
+    prevEl: '.info__btn-prev',
+  },
+
+  
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true,
+    
+  },
+});
+
 
 
 const tabsBtn = document.querySelectorAll('.tabs__item');

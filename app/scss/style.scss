@@ -686,9 +686,6 @@
   position: relative;   
 }
 
-
-
-
 .insurance__btn { 
   position: absolute;
   top: 50%;
@@ -716,14 +713,85 @@
   z-index: 20;
 }
 
-
-
 .swiper-pagination-insurance {
   position: absolute;
   text-align: center;
   z-index: 30;
 }
 
+
+.info {
+  padding: 80px 0; 
+  &-slider {
+    position: relative;
+  } 
+  &__img {
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    height: 50px;
+    margin-bottom: 50px;    
+  }
+  &__date {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &__btn {
+    fill: #FAFAFA;
+    transition: fill .2s;
+    &:hover {
+    fill: #fff;
+    }
+  } 
+  
+}
+
+.swiper__info-wrapper {
+  margin-bottom: 50px;      
+}
+
+.swiper__info-btn {
+  position: absolute;
+  top:345px; 
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $red;
+  transition:background-color .3s ease-in-out;
+  &:hover {
+    background-color: $redHover;
+  }
+}
+
+.info__btn-prev {
+  left: 130px;
+}
+
+.info__btn-next {
+  right: 130px;
+}
+
+.swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+    position: absolute;
+    left: var(--swiper-scrollbar-sides-offset,50%);
+    transform: translateX(-50%);
+    bottom: var(--swiper-scrollbar-bottom,4px);
+    top: var(--swiper-scrollbar-top,auto);
+    z-index: 50;
+    height: var(--swiper-scrollbar-size,4px);
+    width: calc(68% - 2 * var(--swiper-scrollbar-sides-offset,1%));
+    text-align: center;
+  }
 
 
 

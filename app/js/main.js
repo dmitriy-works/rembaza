@@ -70,7 +70,7 @@ const swiperInfo = new Swiper('.swiper__info', {
   slidesPerView: 3,
   spaceBetween: 30,
   grabCursor: true,
-  slideToClickedSlide: true,
+  slideToClickedSlide: true,  
   
   navigation: {
     nextEl: '.info__btn-next',

@@ -816,9 +816,9 @@
 
 .footer__info {
   &-inner {
-    display: flex;
-    justify-content: space-between;
-    gap: 120px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
   }
   &-item {
     max-width: 255px;
@@ -887,6 +887,7 @@
   padding: 10px 25px;
   border: 1px solid $red;
   border-radius: 5px;
+  text-align: center;
   background-color: transparent;
 }
 
@@ -950,13 +951,12 @@
     gap: 20px;
   }
 
-  .footer__top {   
-    gap: 175px;    
-  }
-
-  .footer__info-inner {    
+ .footer__info-inner {    
+    grid-template-columns: repeat(3, 1fr);
     gap: 50px;
-  }
+  }   
+  
+  
 }
 
 
@@ -1004,13 +1004,17 @@
     line-height: 26px;    
   }
 
-  .footer__info-inner {   
-    flex-wrap: wrap;
+  .footer__top {   
+    gap: 180px;    
   }
 
-  .footer__info-item {
-    max-width: 100%;   
+  .footer__bottom-inner {   
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 15px;
   }
+
+  
 }
 
 
@@ -1040,6 +1044,12 @@
   .tabs__content-img {
     width: 100%;
   }
+
+  .footer__top {
+    gap: 50px;
+  }
+
+  
 
 
 }
@@ -1111,6 +1121,16 @@
     grid-template-columns: repeat(1, 1fr);    
   }
 
+  .footer__top {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .footer__top-list {   
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
   
 }
 
@@ -1139,6 +1159,15 @@
   .next__btn {
     right: 50px;    
   }
+
+  .footer__info-inner {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .footer__info-btn {   
+    padding: 7px 15px;    
+  }
 }
 
 
@@ -1148,6 +1177,11 @@
 
   .work__inner {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer__info-inner {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
   }
 }
 

@@ -70,7 +70,27 @@ const swiperInfo = new Swiper('.swiper__info', {
   slidesPerView: 3,
   spaceBetween: 30,
   grabCursor: true,
-  slideToClickedSlide: true,  
+  slideToClickedSlide: true, 
+  breakpoints: {
+          310: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+
+            
+
+             620: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+
+             780: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            
+        },
+     
   
   navigation: {
     nextEl: '.info__btn-next',

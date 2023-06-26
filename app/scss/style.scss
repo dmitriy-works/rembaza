@@ -956,6 +956,9 @@
     gap: 50px;
   }   
   
+  .swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {    
+    width: calc(55% - 2*var(--swiper-scrollbar-sides-offset, 1%));    
+  }
   
 }
 
@@ -1098,6 +1101,10 @@
     right: 100px;    
   }
 
+  .swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+    width: calc(45% - 2*var(--swiper-scrollbar-sides-offset, 1%));
+  }
+
   
 }
 
@@ -1131,8 +1138,102 @@
     flex-wrap: wrap;
   }
 
+  .swiper__info-btn {    
+    top: 341px;
+    width: 38px;
+    height: 38px;      
+  } 
   
 }
+
+
+
+
+
+
+@media(max-width: 760px) {
+
+.swiper__info-btn {
+    top: 331px;    
+  }
+
+}
+
+
+@media(max-width: 720px) {
+
+.swiper__info-btn {
+    top: 326px;    
+  }
+  
+}
+
+@media(max-width: 700px) {
+
+.swiper__info-btn {
+    top: 326px;        
+  }
+
+  
+  
+}
+
+
+
+
+@media(max-width: 680px) {
+
+.swiper__info-btn {
+    top: 325px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .info__btn {
+    width: 13px;
+    height: 8px;
+  }
+  
+}
+
+
+@media(max-width: 660px) {
+
+.swiper__info-btn {
+    top: 315px;    
+  }
+  
+}
+
+
+
+
+@media(max-width: 620px) {
+
+  .info__text {    
+    margin-bottom: 20px;
+  }
+
+  .swiper__info-btn {
+    top: 419px;
+  }
+
+  .info__btn-prev {
+    left: 110px;
+  }
+
+  .info__btn-next {
+    right: 110px;
+  }
+
+  .swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+    display: none;
+  }
+  
+}
+
+
+
 
 
 
@@ -1168,6 +1269,21 @@
   .footer__info-btn {   
     padding: 7px 15px;    
   }
+
+  .info__img {   
+    width: 100%;
+  }
+
+  .info__text {
+    max-width: 100%;    
+    text-align: center;
+  }
+
+  .info__date {    
+    text-align: center;
+  }
+
+  
 }
 
 
@@ -1182,6 +1298,10 @@
   .footer__info-inner {
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
+  }
+
+  .swiper__info-btn {
+    top: 390px;
   }
 }
 
@@ -1220,9 +1340,28 @@
   .swiper-pagination {
     display: none;
   }
+
+  .swiper__info-btn {
+    display: none;
+  }
+
+  .services {
+    padding: 20px 0;    
+  }
+
+  .info {
+    padding: 0;
+  }
 }
 
 
+
+@media(max-width: 430px) {
+
+  .info__text {
+    margin-bottom: 45px;
+  }
+}
 
 
 

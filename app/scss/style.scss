@@ -726,6 +726,8 @@
     position: relative;
   } 
   &__img {
+    max-width: 380px;
+    height: 180px;
     margin-bottom: 20px;
   }
   &__text {
@@ -758,7 +760,7 @@
 
 .swiper__info-btn {
   position: absolute;
-  top:345px; 
+  top:347px; 
   width: 48px;
   height: 48px;
   cursor: pointer;
@@ -1139,7 +1141,7 @@
   }
 
   .swiper__info-btn {    
-    top: 341px;
+    top: 352px;
     width: 38px;
     height: 38px;      
   } 
@@ -1154,7 +1156,7 @@
 @media(max-width: 760px) {
 
 .swiper__info-btn {
-    top: 331px;    
+    top: 351px;    
   }
 
 }
@@ -1163,20 +1165,11 @@
 @media(max-width: 720px) {
 
 .swiper__info-btn {
-    top: 326px;    
+    top: 352px;    
   }
   
 }
 
-@media(max-width: 700px) {
-
-.swiper__info-btn {
-    top: 326px;        
-  }
-
-  
-  
-}
 
 
 
@@ -1184,26 +1177,23 @@
 @media(max-width: 680px) {
 
 .swiper__info-btn {
-    top: 325px;
-    width: 28px;
-    height: 28px;
+    top: 352px;
+    width: 38px;
+    height: 38px;
   }
 
-  .info__btn {
-    width: 13px;
-    height: 8px;
+  .info__btn-prev {
+    left: 110px;
   }
+
+  .info__btn-next {
+    right: 110px;
+  }
+  
   
 }
 
 
-@media(max-width: 660px) {
-
-.swiper__info-btn {
-    top: 315px;    
-  }
-  
-}
 
 
 
@@ -1215,20 +1205,15 @@
   }
 
   .swiper__info-btn {
-    top: 419px;
+    top: 323px;
+  }  
+
+  .info__img {
+    max-width: 100%;
+    height: 100%;    
   }
 
-  .info__btn-prev {
-    left: 110px;
-  }
-
-  .info__btn-next {
-    right: 110px;
-  }
-
-  .swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
-    display: none;
-  }
+  
   
 }
 
@@ -1283,8 +1268,47 @@
     text-align: center;
   }
 
+  .swiper__info-btn {
+    top: 350px;
+  }
+
   
 }
+
+
+@media (max-width: 620px) {
+
+  .swiper__info-btn {
+    top:522px;
+  }
+
+  .info__btn-prev {
+    left: 95px;
+  }
+
+  .info__btn-next {
+    right: 95px;
+  }
+
+}
+
+
+@media (max-width: 610px) {  
+
+  .info {
+    padding: 35px 0;
+  }
+
+  .swiper__info-btn {
+    display: none;
+  }  
+
+  .swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+    display: none;
+  }
+
+}
+
 
 
 

@@ -68,7 +68,7 @@ const swiperInsurance = new Swiper('.swiper__insurance', {
 const swiperInfo = new Swiper('.swiper__info', {
 
   slidesPerView: 3,
-  spaceBetween: 30,
+  spaceBetween: 30,  
   grabCursor: true,
   slideToClickedSlide: true, 
   breakpoints: {
@@ -86,6 +86,11 @@ const swiperInfo = new Swiper('.swiper__info', {
 
              780: {
                 slidesPerView: 2,
+                spaceBetween: 20
+            },
+
+            1200: {
+                slidesPerView: 3,
                 spaceBetween: 20
             },
             
